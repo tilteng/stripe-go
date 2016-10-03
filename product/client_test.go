@@ -6,8 +6,8 @@ import (
 	"testing"
 	"time"
 
-	stripe "github.com/stripe/stripe-go"
-	. "github.com/stripe/stripe-go/utils"
+	stripe "github.com/tilteng/stripe-go"
+	. "github.com/tilteng/stripe-go/utils"
 )
 
 func init() {

@@ -6,12 +6,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/stripe/stripe-go"
-	"github.com/stripe/stripe-go/currency"
-	"github.com/stripe/stripe-go/order"
-	"github.com/stripe/stripe-go/product"
-	"github.com/stripe/stripe-go/sku"
-	. "github.com/stripe/stripe-go/utils"
+	"github.com/tilteng/stripe-go"
+	"github.com/tilteng/stripe-go/currency"
+	"github.com/tilteng/stripe-go/order"
+	"github.com/tilteng/stripe-go/product"
+	"github.com/tilteng/stripe-go/sku"
+	. "github.com/tilteng/stripe-go/utils"
 )
 
 func init() {

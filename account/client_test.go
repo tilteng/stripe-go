@@ -3,13 +3,13 @@ package account
 import (
 	"testing"
 
-	stripe "github.com/stripe/stripe-go"
-	"github.com/stripe/stripe-go/bankaccount"
-	"github.com/stripe/stripe-go/card"
-	"github.com/stripe/stripe-go/currency"
-	"github.com/stripe/stripe-go/recipient"
-	"github.com/stripe/stripe-go/token"
-	. "github.com/stripe/stripe-go/utils"
+	stripe "github.com/tilteng/stripe-go"
+	"github.com/tilteng/stripe-go/bankaccount"
+	"github.com/tilteng/stripe-go/card"
+	"github.com/tilteng/stripe-go/currency"
+	"github.com/tilteng/stripe-go/recipient"
+	"github.com/tilteng/stripe-go/token"
+	. "github.com/tilteng/stripe-go/utils"
 )
 
 func init() {

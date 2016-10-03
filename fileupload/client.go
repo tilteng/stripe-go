@@ -5,7 +5,7 @@ import (
 	"bytes"
 	"fmt"
 
-	stripe "github.com/stripe/stripe-go"
+	stripe "github.com/tilteng/stripe-go"
 )
 
 const (

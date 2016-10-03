@@ -3,11 +3,11 @@ package bankaccount
 import (
 	"testing"
 
-	stripe "github.com/stripe/stripe-go"
-	"github.com/stripe/stripe-go/account"
-	"github.com/stripe/stripe-go/customer"
-	"github.com/stripe/stripe-go/token"
-	. "github.com/stripe/stripe-go/utils"
+	stripe "github.com/tilteng/stripe-go"
+	"github.com/tilteng/stripe-go/account"
+	"github.com/tilteng/stripe-go/customer"
+	"github.com/tilteng/stripe-go/token"
+	. "github.com/tilteng/stripe-go/utils"
 )
 
 func init() {

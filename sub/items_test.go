@@ -5,11 +5,11 @@ import (
 	"math/rand"
 	"testing"
 
-	stripe "github.com/stripe/stripe-go"
-	"github.com/stripe/stripe-go/currency"
-	"github.com/stripe/stripe-go/customer"
-	"github.com/stripe/stripe-go/plan"
-	. "github.com/stripe/stripe-go/utils"
+	stripe "github.com/tilteng/stripe-go"
+	"github.com/tilteng/stripe-go/currency"
+	"github.com/tilteng/stripe-go/customer"
+	"github.com/tilteng/stripe-go/plan"
+	. "github.com/tilteng/stripe-go/utils"
 )
 
 func init() {

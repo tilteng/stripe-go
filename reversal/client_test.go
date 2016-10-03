@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"testing"
 
-	stripe "github.com/stripe/stripe-go"
-	"github.com/stripe/stripe-go/charge"
-	"github.com/stripe/stripe-go/currency"
-	"github.com/stripe/stripe-go/recipient"
-	"github.com/stripe/stripe-go/transfer"
-	. "github.com/stripe/stripe-go/utils"
+	stripe "github.com/tilteng/stripe-go"
+	"github.com/tilteng/stripe-go/charge"
+	"github.com/tilteng/stripe-go/currency"
+	"github.com/tilteng/stripe-go/recipient"
+	"github.com/tilteng/stripe-go/transfer"
+	. "github.com/tilteng/stripe-go/utils"
 )
 
 func init() {

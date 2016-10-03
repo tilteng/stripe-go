@@ -3,11 +3,11 @@ package card
 import (
 	"testing"
 
-	stripe "github.com/stripe/stripe-go"
-	"github.com/stripe/stripe-go/customer"
-	"github.com/stripe/stripe-go/recipient"
-	"github.com/stripe/stripe-go/token"
-	. "github.com/stripe/stripe-go/utils"
+	stripe "github.com/tilteng/stripe-go"
+	"github.com/tilteng/stripe-go/customer"
+	"github.com/tilteng/stripe-go/recipient"
+	"github.com/tilteng/stripe-go/token"
+	. "github.com/tilteng/stripe-go/utils"
 )
 
 func init() {

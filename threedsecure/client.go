@@ -4,7 +4,7 @@ package threedsecure
 import (
 	"strconv"
 
-	"github.com/stripe/stripe-go"
+	"github.com/tilteng/stripe-go"
 )
 
 type Client struct {

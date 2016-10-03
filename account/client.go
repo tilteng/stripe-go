@@ -4,7 +4,7 @@ package account
 import (
 	"strconv"
 
-	stripe "github.com/stripe/stripe-go"
+	stripe "github.com/tilteng/stripe-go"
 )
 
 // Client is used to invoke /account APIs.

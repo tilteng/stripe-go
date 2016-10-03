@@ -1,7 +1,7 @@
 package orderreturn
 
 import (
-	"github.com/stripe/stripe-go"
+	"github.com/tilteng/stripe-go"
 )
 
 // Client is used to invoke /orders APIs.
