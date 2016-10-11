@@ -168,5 +168,37 @@ func (s *TransactionSource) UnmarshalJSON(data []byte) error {
 
 // MarshalJSON handles serialization of a TransactionSource.
 func (s *TransactionSource) MarshalJSON() ([]byte, error) {
-	return json.Marshal(s.ID)
+	var data []byte
+	var err error
+
+	switch s.Type {
+	case TransactionSourceCharge:
+		data, err = json.Marshal(s.Charge)
+	case TransactionSourceDispute:
+		data, err = json.Marshal(s.Dispute)
+	case TransactionSourceFee:
+		data, err = json.Marshal(s.Fee)
+	case TransactionSourceRefund:
+		data, err = json.Marshal(s.Refund)
+	case TransactionSourceReversal:
+		data, err = json.Marshal(s.Reversal)
+	case TransactionSourceTransfer:
+		data, err = json.Marshal(s.Transfer)
+	default:
+		return json.Marshal(s.ID)
+	}
+
+	if err != nil || len(data) < 1 || data[0] != '{' {
+		return data, err
+	}
+
+	prefix := []byte(`{"object":"` + string(s.Type) + `"`)
+	data[0] = ','
+
+	prefix_len := len(prefix)
+	new_len := prefix_len + len(data)
+	new_data := make([]byte, new_len, new_len)
+	copy(new_data, prefix)
+	copy(new_data[prefix_len:], data)
+	return new_data, nil
 }
