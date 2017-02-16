@@ -50,7 +50,7 @@ type Dispute struct {
 	Live            bool              `json:"livemode"`
 	Amount          uint64            `json:"amount"`
 	Currency        Currency          `json:"currency"`
-	Charge          string            `json:"charge"`
+	Charge          *Charge           `json:"charge"`
 	Created         int64             `json:"created"`
 	Refundable      bool              `json:"is_charge_refundable"`
 	Reason          DisputeReason     `json:"reason"`
