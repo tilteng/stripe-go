@@ -171,6 +171,10 @@ func (s *TransactionSource) MarshalJSON() ([]byte, error) {
 	var data []byte
 	var err error
 
+	if s == nil {
+		return []byte("null"), nil
+	}
+
 	switch s.Type {
 	case TransactionSourceCharge:
 		data, err = json.Marshal(s.Charge)
@@ -185,6 +189,9 @@ func (s *TransactionSource) MarshalJSON() ([]byte, error) {
 	case TransactionSourceTransfer:
 		data, err = json.Marshal(s.Transfer)
 	default:
+		if s.ID == "" {
+			return []byte("null"), nil
+		}
 		return json.Marshal(s.ID)
 	}
 
